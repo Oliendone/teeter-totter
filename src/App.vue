@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <InfoPanel />
+  <Playground />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Playground from "@/components/Playground";
+import InfoPanel from "@/components/InfoPanel";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    InfoPanel,
+    Playground
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+#app
+  font-family: Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
 </style>
